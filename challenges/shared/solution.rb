@@ -15,17 +15,13 @@ class Solution
 
   def data
     @data ||= begin
-                processed = @input.lines(chomp: true).map do |line|
-                  process_input line
-                end
-
-                processed.length == 1 ? processed.first : process_dataset(processed)
+                process_dataset(@input)
               end
   end
 
   private
-    def process_input(line)
-      line
+    def process_input(set)
+        set.split('\n').map(&:chomp).map {|line| process_dataset(line) }
     end
 
     def process_dataset(set)
