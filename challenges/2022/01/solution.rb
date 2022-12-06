@@ -13,7 +13,7 @@ module Year2022
 
         def part_2
 
-            #data.max(3).sum
+            data.max(3).sum
 
         end
 
