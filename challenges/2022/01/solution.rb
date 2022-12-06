@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
-
-
 module Year2022
     class Day01 < Solution
 
