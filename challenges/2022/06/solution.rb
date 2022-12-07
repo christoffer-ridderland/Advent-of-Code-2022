@@ -14,7 +14,8 @@ module Year2022
         def detectStart(n)
             signal = @input
             count = 0
-            while !("a".."z").all?{|c| signal[0..n-1].count(c) <= 1}
+            letters = ("a".."z")
+            while !letters.all?{|c| signal[0..n-1].count(c) <= 1}
                 count += 1
                 signal = signal[1..-1]
             end
