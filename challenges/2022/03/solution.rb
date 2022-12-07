@@ -23,7 +23,7 @@ module Year2022
         end
 
         private
-
+        
         # Processes the dataset as a whole
         def process_dataset(set)
             set.split("\n")
