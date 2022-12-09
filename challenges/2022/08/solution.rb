@@ -109,10 +109,6 @@ module Year2022
         
 
         private
-        # Processes each line of the input file and stores the result in the dataset
-        # def process_input(line)
-        #   line.map(&:to_i)
-        # end
 
         # Processes the dataset as a whole
         def process_dataset(set)
