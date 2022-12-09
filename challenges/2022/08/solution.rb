@@ -5,7 +5,6 @@ module Year2022
         # Call `data` to access either an array of the parsed data, or a single record for a 1-line input file
 
         def part_1
-            
             sum = 0
             (0..data.length-1).each do |x|
                 (0..data[0].length-1).each do |y|
@@ -35,7 +34,7 @@ module Year2022
             passes = true
             ## check left
             while tmp >= 0
-                if data[tmp][y] >= max then passes = false end
+                if data[tmp][y] >= max then passes = false; break end
                 tmp -= 1
             end
             if passes then return true end
@@ -43,7 +42,7 @@ module Year2022
             passes = true
             ## check up
             while tmp >= 0
-                if data[x][tmp] >= max then passes = false end
+                if data[x][tmp] >= max then passes = false; break end
                 tmp -= 1
             end
             if passes then return true end
@@ -51,7 +50,7 @@ module Year2022
             passes = true
             ## check right
             while tmp < data.length
-                if data[tmp][y] >= max then passes = false end
+                if data[tmp][y] >= max then passes = false; break end
                 tmp += 1
             end
             if passes then return true end
@@ -59,7 +58,7 @@ module Year2022
             passes = true
             ## check down
             while tmp < data[0].length
-                if data[x][tmp] >= max then passes = false end
+                if data[x][tmp] >= max then passes = false; break end
                 tmp += 1
             end
             if passes then return true end
