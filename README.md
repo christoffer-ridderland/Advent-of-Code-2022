@@ -1,6 +1,6 @@
 # Advent of Code 2022
-The aoc_rb ruby gem is required to run a solution automaticaly  
-To run the a day run: `> aoc output [year] [day]` in `/Advent-of-Code-2022/`
+The `aoc_rb` ruby gem is required to run a solution automaticaly  
+To run a day run: `> aoc output [year] [day]` in `/Advent-of-Code-2022/`
 
 - [x] Day 1 :star::star:
 - [x] Day 2 :star::star:
