@@ -15,7 +15,7 @@ To run a day run: `> aoc output [year] [day]` in `/Advent-of-Code-2022/`
 - [x] Day 11 :star::star:
 - [x] Day 12 :star::star:
 - [x] Day 13 :star::star:
-- [ ] Day 14
+- [x] Day 14 :star::star:
 - [ ] Day 15
 - [ ] Day 16
 - [ ] Day 17
