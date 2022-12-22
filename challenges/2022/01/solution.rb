@@ -15,8 +15,8 @@ module Year2022
 
 
         #Processes the dataset as a whole
-        def process_dataset(set)
-            set.split("\n\n").map { |elf| elf.split.map { |calories| calories.to_i }.sum }
+        def process_dataset(💩)
+            💩.split("\n\n").map { |😎| 😎.split.map { |🥵| 🥵.to_i }.sum }
         end
 
     end
