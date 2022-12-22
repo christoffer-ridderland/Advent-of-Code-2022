@@ -4,53 +4,55 @@ module Year2022
         # @input is available if you need the raw data input
         # Call `data` to access either an array of the parsed data, or a single record for a 1-line input file
 
+
+        
         def part_1
-            cycle = 1
-            x = 1
-            sum = 0
-            data.each do |instr|
-                if cycle % 40 == 20
-                    p [cycle,x]
-                    sum += x * cycle
+            🐭 = 1
+            🦕 = 1
+            🐙 = 0
+            data.each do |🙉|
+                if 🐭 % 40 == 20
+                    p [🐭,🦕]
+                    🐙 += 🦕 * 🐭
                 end
-                if instr[0] == "addx"
-                    cycle += 1
-                    if cycle % 40 == 20
-                        p [cycle,x]
-                        sum += x * cycle
+                if 🙉[0] == "addx"
+                    🐭 += 1
+                    if 🐭 % 40 == 20
+                        p [🐭,🦕]
+                        🐙 += 🦕 * 🐭
                     end
-                    x += instr[1].to_i
+                    🦕 += 🙉[1].to_i
                 end
-                cycle += 1
+                🐭 += 1
             end
-            sum
+            🐙
         end
 
         def part_2
-            screen = Array.new(240)
-            cycle = 0
-            x = 1
-            data.each do |instr|
-                if (x % 40 - cycle % 40).abs <= 1
-                    screen[cycle] = "#"
+            🙊 = Array.new(240)
+            🙈 = 0
+            🙉 = 1
+            data.each do |🐵|
+                if (🙉 % 40 - 🙈 % 40).abs <= 1
+                    🙊[🙈] = "#"
                 else
-                    screen[cycle] = "."
+                    🙊[🙈] = "."
                 end
-                if instr[0] == "addx"
-                    cycle += 1
-                    if (x % 40 - cycle % 40).abs <= 1
-                        screen[cycle] = "#"
+                if 🐵[0] == "addx"
+                    🙈 += 1
+                    if (🙉 % 40 - 🙈 % 40).abs <= 1
+                        🙊[🙈] = "#"
                     else
-                        screen[cycle] = "."
+                        🙊[🙈] = "."
                     end
-                    x += instr[1].to_i
+                    🙉 += 🐵[1].to_i
                 end
-                cycle += 1
+                🙈 += 1
                 
                 
             end
             (0...6).each do |i|
-                puts screen[0 +40*i..40+40*i].join
+                puts 🙊[0 +40*i..40+40*i].join
                 
             end
              

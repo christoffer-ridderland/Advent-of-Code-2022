@@ -2,14 +2,16 @@ module Year2022
     class Day01 < Solution
 
         def part_1
-
-            data.max
+            👨‍🍼 = data
+            👨‍🍼.max
 
         end
 
         def part_2
+            👨🏼‍🦽 = 3
+            🤵🏽‍♂️ = data
 
-            data.max(3).sum
+            🤵🏽‍♂️.max(👨🏼‍🦽).sum
 
         end
 
